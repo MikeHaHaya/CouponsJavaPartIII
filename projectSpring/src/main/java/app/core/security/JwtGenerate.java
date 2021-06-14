@@ -54,6 +54,8 @@ public class JwtGenerate {
 		return jwtParser.parseClaimsJws(token).getBody();
 	}
 
+	// TODO -- Remove unnecessary methods
+
 	/**
 	 *  Returns and extracts the ID (subject) written on the incoming token.
 	 */

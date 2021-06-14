@@ -3,10 +3,10 @@ package app.core.security;
 public class UserDetails {
 
     private String id;
-    String email;
-    String password;
-    UserType userType;
-    String token;
+    private String email;
+    private String password;
+    private UserType userType;
+    private String token;
 
     public UserDetails(String id, String email, String password, UserType userType) {
         this.id = id;
