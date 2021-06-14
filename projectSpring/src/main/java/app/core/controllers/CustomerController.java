@@ -1,17 +1,19 @@
 package app.core.controllers;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import app.core.security.CredentialsDetails;
+import app.core.security.UserDetails;
+import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
 @RestController
 @RequestMapping("/customer")
 public class CustomerController extends ClientController {
 
+
     @Override
-    public boolean login(String email, String password) {
-        return false;
+    @PostMapping("/login")
+    public UserDetails login(@RequestBody CredentialsDetails details) {
+        return null;
     }
 
 }
